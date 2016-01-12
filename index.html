@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Présentation HTML / CSS</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>SimplonMars</h1>
+					<h3>Présentation du HTML / CSS</h3>
+<!--					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>-->
+				</section>
+
+				<section>
+					<h2>Le HTML</h2>
+					<p>
+						Le HTML(Hypertext Markup Language) est un langage de "balisage". Il sert à représenter les pages Web (WWW : World Wide Web)..
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+<!--						<h2>Vertical Slides</h2>-->
+						<p>Le HTML donne la structure d'une page Web.</p>
+						<p>Il est généralement associé avec :</p>
+						<br>
+						<ul>
+							<li>des feuilles de style CSS (Cascading Style Sheets) pour la mise en page (la présentation, le design).</li>
+							<li>des scripts en langage JavaScript pour obtenir un comportement dynamique.</li>
+						</ul>
+<!--						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>-->
+					</section>
+					<section>
+<!--						<h2>Basement Level 1</h2>-->
+						<p>Les langages HTML et CSS font partie des langages de description (contrairement à JavaScript qui est un langage de programmation).</p>
+						<img width="298" height="318" data-src="img/tableVers.jpg">
+					</section>
+<!--					<section>
+						<h2>Basement Level 2</h2>
+						<p>That's it, time to go back up.</p>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>-->
+				</section>
+
+				<section>
+					<h2>Les outils pour coder en langage HTML</h2>
+					<p>Le code d'une page HTML est stocké dans un fichier texte avec l'extension .htm ou .html</p>
+				</section>
+
+				<section>
+<!--					<h2>Point of View</h2>-->
+					<p>Un éditeur de texte est donc nécessaire pour écrire le code source par example notepad++ ou bien atom.</p>
+				</section>
+
+				<section>
+<!--					<h2>Touch Optimized</h2>-->
+					<p>Pour interpréter le code HTML, il faut simplement un navigateur Web (c'est-à-dire un client HTTP HyperText Transfer Protocol). Par example Chrome.</p>
+				</section>
+
+<!--				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment current-visible">current-visible</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+					</section>
+				</section>-->
+
+				<section>
+					<h2>Squelette d'une page HTML5</h2>
+					<!--<img width="358" height="318" data-src="img/page_html.jpg">-->
+					<p>&lt;!DOCTYPE html&gt;
+					&lt;!--indique le type de document--&gt;</p>
+					<p>&lt;html&gt;
+					&lt;!--début du code html--&gt;</p>
+					<p>&lt;head&gt;
+					&lt;!--début de l'en-tête--&gt;</p>
+					<p>&lt;meta charset=&quot;UTF-8&quot;/&gt;
+					&lt;!--encodage des caractères--&gt;</p>
+					<p>&lt;title&gt;Document sans nom&lt;/title&gt;
+					&lt;!--titre--&gt;</p>
+					<p>&lt;/head&gt;
+					&lt;!--fin de l'en-tête--&gt;</p>
+					<p>&lt;body&gt;
+					&lt;!--corps de la page--&gt;</p>
+					<p>&lt;/body&gt;</p>
+					<p>&lt;/html&gt;
+					&lt;!--fin du code html--&gt;</p>
+				</section>
+				<section>
+					<h2>Mise en page avec les feuilles de style CSS(Cascading style sheets)</h2>
+					<p>Les règles de style CSS permettent de personnaliser les couleurs, de définir les polices de caractères, de positionner les éléments les uns par rapport aux autres, etc.
+					Bref en html seulement c'est moche, mais avec le css c'est plus joli !</p>
+				</section>
+				<section>
+					<h2>Insertion des styles dans les balises HTML</h2>
+						<p>On peut incorporer les styles CSS directement dans les balises HTML avec l'attribut style.
+						Cette technique est simple mais peu pratique.</p>
+				</section>
+				<section style="background-color: green;">
+						<p>Example: </p>
+						<p>&lt;body style=&quot;background-color: green; font-family: 'TimesNewRoman';&quot;&gt;</p>
+						&lt;h2 style=&quot;text-align: center; color:brown;&quot;&gt;<p style="color:brown;">Les feuilles de style CSS&lt;/h2&gt;</p>
+						&lt;p style=&quot;margin-left: 100px;&quot;&gt;Bonjour à tous !
+						Ceci est un exemple d'utilisation des feuilles de style&lt;span style=&quot;color: blue; font-weight: bold;&quot;&gt;
+						<p style="color: blue; font-weight: bold;">CSS</p>
+						&lt;/span&gt;(Cascading Style Sheets).&lt;/p&gt;</br>
+						&lt;/body&gt;
+				</section>
+				<section>
+					<h2>Lier des styles à partir d'une feuille séparée</h2>
+					<p>C'est la technique la plus efficace, celle que l'on rencontre dans la plupart des sites Web.</p>
+				</section>
+				<section style="font-size:36px; background-color: green;">
+					&lt;!DOCTYPE html&gt;</br>
+					<span>&lt;html&gt;</span></br>
+					&lt;head&gt;</br>
+					<span>&lt;meta charset=&quot;UTF-8&quot;&gt;</span></br>
+					&lt;title&gt;Une page web en HTML5&lt;/title&gt;</br>
+					<span>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</span></br>
+					<span>&lt;/head&gt;</span></br>
+					&lt;body&gt;</br>
+					<span style="color:brown;">&lt;h2&gt;Les feuilles de style CSS&lt;/h2&gt;</span></br>
+					&lt;p&gt;Bonjour à tous !
+					Ceci est un exemple d'utilisation des feuilles de style&lt;span class=&quot;important&quot;&gt;
+					<span style="color: blue; font-weight: bold;">CSS</span>
+					&lt;/span&gt;(Cascading Style Sheets).&lt;/p&gt;</br>
+					&lt;/body&gt;</br>
+					<span>&lt;/html&gt;</span>
+				</section>
+				<section>
+					<p>L'élément &lt;link> fait le lien avec la feuille de style CSS (ici le fichier externe style.css)</p>
+					<p>L'attribut class de l'élément &lt;span> permet d'utiliser des règles CSS personnalisées.
+					La feuille de style se trouve dans le fichier style.css</p>
+				</section>
+				<section style="margin-top: -65px; font-size:36px;">
+					<p>La syntaxe du langage CSS est très simple à comprendre :</p>
+					&lt;!--selecteur de type--> body {</br>
+					<span>background-color: green;</span></br>
+					<span>font-family: 'TimesNewRoman';</span></br>
+					<span>}</span></br>
+
+					h2 {</br>
+					<span>text-align: center;</span></br>
+					<span>color: brown;</span></br>
+					<span>}</span></br>
+
+					p {</br>
+					<span>margin-left: 100px;</span></br>
+					<span>}</span></br>
+
+					/*le selecteur "." ==> classe */
+					.important {</br>
+						<span>color: blue;<span></br>
+						<span>font-weight: bold;</span></br>
+					}
+				</section>
+				<section>
+					<p>C'EST FINI !!! MAINTENANT C'EST À VOUS DE JOUER !!</p>
+				</section>
+<!--				<section id="transitions">
+					<h2>Squelette d'une page HTML5</h2>
+					<img width="358" height="318" data-src="img/page_html.jpg">
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>-
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>-->
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+<!--						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>-
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>-->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
